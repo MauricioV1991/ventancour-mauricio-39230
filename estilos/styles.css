@@ -41,7 +41,7 @@ body {
 .header-nav {
     grid-column-start: 1;
     grid-column-end: 4;
-    background-image: url(/imagenes/background-1932466_1920.jpg);
+    background-image: url(../imagenes/background-1932466_1920.jpg);
     background-size: 80%;
 
 }
@@ -74,7 +74,7 @@ nav a:hover {
 .footer {
     grid-column-start: 1;
     grid-column-end: 4;
-    background-image: url(/imagenes/background-1932466_1920.jpg);
+    background-image: url(../imagenes/background-1932466_1920.jpg);
     background-size: 100%;
     display: grid;
     justify-content: center;
@@ -86,7 +86,7 @@ nav a:hover {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 4;
-    background-image: url(/imagenes/LOTTO\ delivery\ gastronomico\ blanco\ -\ copia.png);
+    background-image: url(../imagenes/LOTTO\ delivery\ gastronomico\ blanco\ -\ copia.png);
     background-size: 50%;
 
 }
@@ -97,7 +97,7 @@ nav a:hover {
 }
 
 .clase-de-vinos {
-    background-image: url(/imagenes/consejos_para_el_cuidado_de_la_parra_de_uvas.jpg);
+    background-image: url(../imagenes/consejos_para_el_cuidado_de_la_parra_de_uvas.jpg);
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
@@ -107,7 +107,7 @@ nav a:hover {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    background-image: url(/imagenes/bondioladecerdo.jpeg);
+    background-image: url(../imagenes/bondioladecerdo.jpeg);
     background-size: cover;
 }
 
@@ -118,7 +118,7 @@ nav a:hover {
 .biografia-del-chef {
     grid-column-start: 1;
     grid-column-end: 1;
-    background-image: url(/imagenes/cocinerosfondo2.jpeg);
+    background-image: url(../imagenes/cocinerosfondo2.jpeg);
     background-size: cover;
 }
 
