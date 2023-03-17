@@ -1,0 +1,118 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Staatliches&display=swap');
+
+
+#container {
+    margin: 5px;
+    width: 97%;
+    max-width: 1600px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px auto;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-rows: repeat(6, auto);
+
+
+}
+
+.main {
+    height: 400px;
+    text-align: center;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url(../imagenes/fried-steak-pieces-on-wooden-board-and-garlic.jpg);
+    background-size: 100%;
+    color: orange;
+    border-radius: 50px;
+
+    h2 {
+        
+        font-size: 40px;
+    }
+
+    p {
+        color: orangered;
+        font-size: 20px;
+    }
+
+    article {
+        color: orangered;
+    }
+}
+
+.clase-de-vinos {
+    background-image: url(../imagenes/consejos_para_el_cuidado_de_la_parra_de_uvas.jpg);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    border-radius: 50px;
+
+    p {
+        color: brown;
+    }
+
+}
+
+.clases-de-carnes {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background-image: url(../imagenes/fondo.empresa.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: auto;
+    text-align: center;
+
+    h2 {font-size: 50px;
+        color: rgb(15, 15, 14);
+    }
+    li{padding: 5px;
+        float: left;
+        font-size: 40px;
+    }
+    .foto_bondiola {
+       float: left;
+       margin: 50px;
+       img{
+        width: 400px;
+        border-radius: 20px;
+       }
+    }
+
+}
+
+
+
+.biografia-del-chef {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-image: url(../imagenes/biografia_chef.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.biografia-del-chef h2 {
+    font-weight: 200;
+}
+
+.biografia-del-chef p {
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.video-chef {
+    border-radius: 50px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 6;
+}
+
+.aside-publicidad {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url(../imagenes/ypf_foto.png);
+    border-radius: 50px;
+    background-size: cover;
+}

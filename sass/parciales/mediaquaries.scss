@@ -1,0 +1,217 @@
+/* media_query header-nav*/
+@media screen and (max-width: 580px) {
+    #header-nav {
+        height: 350px;
+        padding: 20px 10px !important;
+    }
+
+    #header-nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #navbar-right {
+        float: left;
+    }
+}
+
+/* catering*/
+@media only screen and (max-width: 580px) {
+    #container_catering {
+        grid-column: 1;
+        grid-template-rows: 0.5fr;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    main {
+        display: none;
+    }
+
+    .form.form {
+        width: auto;
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        background-repeat: no-repeat;
+
+        .card {
+            margin-top: 10px;
+            margin-left: 20px;
+
+
+            img {
+                width: auto;
+            }
+        }
+
+    }
+
+}
+
+/*index*/
+
+@media only screen and (max-width: 750px) {
+    #container {
+        grid-column: 1;
+        display: block;
+    }
+
+    .main {
+        width: auto;
+    }
+
+    .clase-de-vinos {
+        width: auto;
+    }
+
+    .clases-de-carnes {
+        width: auto;
+        height: 900px;
+
+        .foto_bondiola img {
+            float: right;
+            width: 250px;
+        }
+    }
+
+    .biografia-del-chef {
+        display: none;
+    }
+
+    .video-chef {
+        display: none;
+    }
+
+    .aside-publicidad {
+        display: none;
+    }
+}
+
+/*footer*/
+@media screen and (min-width: 24.375em) {
+
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav>* {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
+
+/*empresa*/
+@media screen and (max-width: 580px) {
+    #container_empresa {
+        grid-column: 1;
+        display: block;
+        justify-items: center;
+
+        main.empresa {
+            width: 100%;
+            display: block;
+
+            h3 {
+                grid-column-end: 2;
+                grid-row-end: 1;
+                font-size: 30px;
+            }
+
+            h3:hover {
+                color: black;
+            }
+
+            .img_logo img {
+                margin-top: 20px;
+                display: block;
+                width: 300px;
+            }
+
+            .cartas_franquicias {
+                margin-left: 60px;
+                grid-column-end: 2;
+                display: block;
+            }
+
+            .container_gold .box {
+                width: 100px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    #container_menu {
+       width: auto;
+        display: block;
+        justify-items: center;
+        columns: 1;
+        text-align: center;
+
+        main.main_menu {
+            width: auto;
+            display: block;
+
+            .flip-card-front,
+            .flip-card-back {
+                width: 80%;
+            }
+        }
+        .comidas-vinos-postres{
+            margin-left: 10px;
+        }
+        .descripcion{
+          color: black;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          .flip-card{
+            width: auto;
+          }
+    }
+
+}
+/*sobre_nosotros*/
+@media screen and (max-width: 580px) {
+    #container_nosotros main.nosotros{display: block;     
+       img {display: block;       
+      height: auto;
+         }
+         h2 {
+            font-size: 30px;
+         }
+     p{
+        font-size: 15px;
+     } 
+    .content{
+        width: auto;
+    }
+    } 
+    }
+
+
+

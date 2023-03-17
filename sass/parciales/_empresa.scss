@@ -1,0 +1,266 @@
+#container_empresa {
+    width: 100%;
+    max-width: 1600px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 0,5fr 0.5fr;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    main.empresa {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: auto;
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,175,29,1) 50%, rgba(252,96,69,1) 99%);
+        background-size: cover;
+        margin-top: 10px;
+        display: grid;
+      
+
+
+        h3 {
+            grid-column-end: 1;
+            grid-row-end: 1;
+            font-weight: 700;
+            font-size: 30px;
+            color:white;
+            margin: 10px;
+        }
+
+        h3:hover {
+            color:rgb(66, 49, 49);
+        }
+
+        .img_logo {background-image: url(../imagenes/fondo.empresa.jpg);
+            grid-column-end: 1;
+            grid-row-end: 1;
+            margin-top: 150px;
+            margin-left: 30px;
+            text-align: center;
+            
+            p{   background-color: rgb(233, 209, 166);
+                border-radius: 20px;
+                font-size: 20px;
+                color: rgb(10, 9, 9);
+                font-size:30px;
+                
+            }
+
+        }
+
+        .img_logo img {
+            width: 500px;
+            border-radius: 30px;
+        }
+
+        .cartas_franquicias {
+           
+            margin-top: 100px;
+            display: inline-block;
+            grid-template-columns: repeat(3, 0.4fr);
+            margin-top: 100px;
+          
+            .container_gold {
+                padding: 20px;
+                color: gold;
+                position: relative;
+                font-family: sans-serif;
+            }
+
+            .container_gold::before,
+            .container_gold::after {
+                content: "";
+                background-color: gold;
+                position: absolute;
+            }
+
+            .container_gold .box {
+                width: 11.875em;
+                height: 15.875em;
+                padding: 1rem;
+                background-color: rgba(124, 224, 43, 0.074);
+                border: 1px solid rgba(255, 255, 255, 0.222);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                border-radius: .7rem;
+                transition: all ease .3s;
+            }
+
+            .container_gold .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+
+            .container_gold .box .title {
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: .1em
+            }
+
+            .container_gold .box div strong {
+                display: block;
+                margin-bottom: .3rem;
+            }
+
+            .container_gold .box div p {
+                margin: 0;
+                font-size: .9em;
+                font-weight: 300;
+                letter-spacing: .1em;
+            }
+
+            .container_gold .box div span {
+                font-size: .7rem;
+                font-weight: 300;
+            }
+
+            .container_gold .box div span:nth-child(3) {
+                font-weight: 500;
+                margin-right: .2rem;
+            }
+
+            .container_gold .box:hover {
+                box-shadow: 0px 0px 20px 1px #cac70f3f;
+                border: 2px solid rgba(145, 87, 87, 0.454);
+            }
+
+            .container_silver {
+                padding: 10px;
+                color: rgb(88, 81, 81);
+                position: relative;
+                font-family: sans-serif;
+            }
+
+            .container_silver::before,
+            .container_gold::after {
+                content: "";
+                background-color: rgb(238, 216, 95);
+                position: absolute;
+            }
+
+            .container_silver .box {
+                width: 11.875em;
+                height: 15.875em;
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.074);
+                border: 1px solid rgba(255, 255, 255, 0.222);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                border-radius: .7rem;
+                transition: all ease .3s;
+            }
+
+            .container_silver .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .container_silver .box .title {
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: .1em
+            }
+
+            .container_silver .box div strong {
+                display: block;
+                margin-bottom: .5rem;
+            }
+
+            .container_silver .box div p {
+                margin: 0;
+                font-size: .9em;
+                font-weight: 300;
+                letter-spacing: .1em;
+            }
+
+            .container_silver .box div span {
+                font-size: .7rem;
+                font-weight: 300;
+            }
+
+            .container_silver .box div span:nth-child(3) {
+                font-weight: 500;
+                margin-right: .2rem;
+            }
+
+            .container_silver .box:hover {
+                box-shadow: 0px 0px 20px 1px #ffbb763f;
+                border: 1px solid rgba(255, 255, 255, 0.454);
+            }
+
+            .container_cobre {
+                padding: 10px;
+                color: rgb(41, 37, 13);
+                position: relative;
+                font-family: sans-serif;
+            }
+
+            .container_cobre::before,
+            .container_cobre::after {
+                content: "";
+                background-color: gold;
+                position: absolute;
+            }
+
+            .container_cobre .box {
+                width: 11.875em;
+                height: 15.875em;
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.074);
+                border: 1px solid rgba(255, 255, 255, 0.222);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                border-radius: .7rem;
+                transition: all ease .3s;
+            }
+
+            .container_cobre .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .container_cobre .box .title {
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: .1em
+            }
+
+            .container_cobre .box div strong {
+                display: block;
+                margin-bottom: .5rem;
+            }
+
+            .container_cobre .box div p {
+                margin: 0;
+                font-size: .9em;
+                font-weight: 300;
+                letter-spacing: .1em;
+            }
+
+            .container_cobre .box div span {
+                font-size: .7rem;
+                font-weight: 300;
+            }
+
+            .container_cobre .box div span:nth-child(3) {
+                font-weight: 500;
+                margin-right: .2rem;
+            }
+
+            .container_cobre .box:hover {
+                box-shadow: 0px 0px 20px 1px #ffbb763f;
+                border: 1px solid rgba(255, 255, 255, 0.454);
+            }
+        }
+    }
+}
