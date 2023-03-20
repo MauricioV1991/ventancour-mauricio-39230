@@ -5,7 +5,6 @@
     grid-gap: 10px;
     margin: 10px auto;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr 0,5fr 0.5fr;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,6 +12,7 @@
     main.empresa {
         grid-column-start: 1;
         grid-column-end: 4;
+        grid-row-end: 3;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
         height: auto;

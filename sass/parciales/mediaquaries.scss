@@ -24,33 +24,64 @@
         display: block;
     }
 }
-
+/*menu*/
 @media screen and (max-width: 580px) {
-    main {
-        display: none;
-    }
 
-    .form.form {
-        width: auto;
+
+    #container_menu {
+        grid-column: 1;
         display: block;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        background-repeat: no-repeat;
-
-        .card {
-            margin-top: 10px;
-            margin-left: 20px;
-
-
-            img {
-                width: auto;
-            }
+    main.menu{
+        display: block;
+    }
+     .cards{
+    display: flex;
+    card{
+        width: auto;
+    }
+     }
+ 
+        .menu-cards {
+            display: block;
+            width: auto;
         }
 
+        .menu-wrapper {
+            display: block;
+            width: auto;
+        }
+    }
+    .menu-card {
+        width: 70%;
+    }
+    .welcome p {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 580px) {
+
+    /* Estilos para la sección de comidas */
+    .comidas {
+        width: 70%;
+    }
+
+    .comidas article li {
+        font-size: 16px;
+    }
+
+    /* Estilos para la sección de vinos */
+    .vinos article li {
+        font-size: 14px;
+    }
+
+    /* Estilos para la sección de postres */
+    .postres li {
+        font-size: 16px;
     }
 
 }
-
 /*index*/
 
 @media only screen and (max-width: 750px) {
@@ -88,6 +119,10 @@
     .aside-publicidad {
         display: none;
     }
+
+    .pie img {
+        height: 40px;
+    }
 }
 
 /*footer*/
@@ -96,10 +131,15 @@
     .legal .legal__links {
         margin-left: auto;
     }
+
+
 }
 
 @media screen and (min-width: 40.375em) {
+
+
     .footer__nav>* {
+
         flex: 1;
     }
 
@@ -157,61 +197,26 @@
 
 }
 
-@media screen and (max-width: 580px) {
-
-    #container_menu {
-       width: auto;
-        display: block;
-        justify-items: center;
-        columns: 1;
-        text-align: center;
-
-        main.main_menu {
-            width: auto;
-            display: block;
-
-            .flip-card-front,
-            .flip-card-back {
-                width: 80%;
-            }
-        }
-        .comidas-vinos-postres{
-            margin-left: 10px;
-        }
-        .descripcion{
-          color: black;
-        }
-        .flip-card-inner {
-            position: relative;
-            width: 80%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-          }
-          .flip-card{
-            width: auto;
-          }
-    }
-
-}
 /*sobre_nosotros*/
-@media screen and (max-width: 580px) {
-    #container_nosotros main.nosotros{display: block;     
-       img {display: block;       
-      height: auto;
-         }
-         h2 {
+@media screen and (max-width: 780px) {
+    #container_nosotros main.nosotros {
+        display: block;
+
+        img {
+            display: block;
+            height: auto;
+        }
+
+        h2 {
             font-size: 30px;
-         }
-     p{
-        font-size: 15px;
-     } 
-    .content{
-        width: auto;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .content {
+            width: auto;
+        }
     }
-    } 
-    }
-
-
-
+}

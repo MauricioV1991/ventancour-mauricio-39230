@@ -1,4 +1,4 @@
-#container_catering {
+#container_catering {background-image: url(../imagenes/fondo_menu.jpeg);
     width: 100%;
     max-width: 1600px;
     display: grid;
@@ -8,13 +8,31 @@
     grid-template-rows: 0.3fr 1fr  ;
 
 }
-.main {
+main {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-end: 2;
     height: auto;
     text-align: center;
+    .form form {
+        width: 750px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    .carousel-inner{
+        margin-top: 200px;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-item h3 {
+        color: black;
+        font-style: italic;
+    }
 
 }
 
@@ -22,45 +40,156 @@
     width: 50px;
 }
 
-.form {
-    width: auto;
-    display: grid;
+form {height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.card input[type="radio"] {
+    display: none;
+}
+
+.card label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Form container */
+.form_container {
     background-image: url(../imagenes/cocinamuro.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    margin: 50px;
-    border-radius: 10px;
-
-}
-
-.form_container {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-
-    text-align: center;
-
-}
-
-.form form {
-    width: 450px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 900px; 
-}
-
-.carousel-item h3 {
-    color: black;
-    font-style: italic;
-}
-
-.form_group {
-    display: grid;
-    width: 40%;
-    margin: auto;}
     
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form title */
+.form_container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Form subtitle */
+.form_container p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input label */
+.form_label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Input field */
+.form_input {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Input field line */
+.form_line {
+    height: 2px;
+    background-color: #ccc;
+    display: block;
+}
+
+/* Submit button */
+.form_submit {
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Submit button hover */
+.form_submit:hover {
+    background-color: #004c99;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    /* Form container */
+    .form_container {
+        padding: 10px;
+    }
+
+    /* Form title */
+    .form_container h2 {
+        font-size: 2rem;
+    }
+
+    /* Form subtitle */
+    .form_container p {
+        font-size: 1rem;
+    }
+
+    /* Input field */
+    .form_input {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    /* Submit button */
+    .form_submit {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

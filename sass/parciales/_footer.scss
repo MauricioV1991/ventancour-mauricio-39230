@@ -4,13 +4,13 @@
     grid-row-start: 6;
     
 
-    background-image: url(../imagenes/fondo\ carnes.jpeg);
+   background-image: url(../imagenes/fondo.footer.jpg);
     background-size: cover;
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
-    color: #d1660e;
-    background-color: #fff;
+    color: #030303;
+    background-color: #f30606;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -24,10 +24,9 @@
 }
 
 .footer__logo {
-    font-family: 'Pacifico', cursive;
     font-weight: 400;
     text-transform: lowercase;
-    font-size: 1.5rem;
+  
 }
 
 .footer__addr h2 {
@@ -37,8 +36,8 @@
 }
 
 .nav__title {
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 800;
+    font-size: 5px;
 }
 
 .footer address {
@@ -106,7 +105,7 @@ display: flexbox;
 .legal {
     display: flex;
     flex-wrap: wrap;
-    color: #999;
+    color: #030303;
 }
 
 .legal__links {

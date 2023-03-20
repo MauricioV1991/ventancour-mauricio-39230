@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Staatliches&display=swap");
 #header-nav {
   height: 150px;
@@ -67,6 +68,7 @@ body {
 }
 
 #container_catering {
+  background-image: url(../imagenes/fondo_menu.jpeg);
   width: 100%;
   max-width: 1600px;
   display: grid;
@@ -76,7 +78,7 @@ body {
   grid-template-rows: 0.3fr 1fr;
 }
 
-.main {
+main {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -84,50 +86,175 @@ body {
   height: auto;
   text-align: center;
 }
+main .form form {
+  width: 750px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+main .carousel-inner {
+  margin-top: 200px;
+}
+main .carousel-item img {
+  width: 100%;
+  height: 400px;
+}
+main .carousel-item h3 {
+  color: black;
+  font-style: italic;
+}
 
 .logo img {
   width: 50px;
 }
 
-.form {
-  width: auto;
-  display: grid;
+form {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+.card input[type=radio] {
+  display: none;
+}
+
+.card label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Form container */
+.form_container {
   background-image: url(../imagenes/cocinamuro.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
-  margin: 50px;
-  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.form_container {
-  width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 4;
+/* Form title */
+.form_container h2 {
+  font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.form form {
-  width: 450px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+/* Form subtitle */
+.form_container p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.carousel-item img {
-  width: 100%;
-  height: 900px;
-}
-
-.carousel-item h3 {
-  color: black;
-  font-style: italic;
-}
-
+/* Form group */
 .form_group {
-  display: grid;
-  width: 40%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* Input label */
+.form_label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Input field */
+.form_input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Input field line */
+.form_line {
+  height: 2px;
+  background-color: #ccc;
+  display: block;
+}
+
+/* Submit button */
+.form_submit {
+  background-color: #0066cc;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Submit button hover */
+.form_submit:hover {
+  background-color: #004c99;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  /* Form container */
+  .form_container {
+    padding: 10px;
+  }
+  /* Form title */
+  .form_container h2 {
+    font-size: 2rem;
+  }
+  /* Form subtitle */
+  .form_container p {
+    font-size: 1rem;
+  }
+  /* Input field */
+  .form_input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  /* Submit button */
+  .form_submit {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
 #container {
   margin: 5px;
   width: 97%;
@@ -240,7 +367,6 @@ body {
   grid-gap: 10px;
   margin: 10px auto;
   padding: 10px;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 0, 5fr 0.5fr;
   background-size: cover;
   background-repeat: no-repeat;
@@ -248,6 +374,7 @@ body {
 #container_empresa main.empresa {
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-end: 3;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: auto;
@@ -460,101 +587,161 @@ body {
 }
 
 #container_menu {
-  height: auto;
-  width: 1300px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-#container_menu main.main_menu {
-  width: auto;
-  height: auto;
-  background-image: url(../imagenes/cocinamuro.jpeg);
-  background-size: cover;
-  margin: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-#container_menu main.main_menu .menu_dias {
-  padding: 20px;
-}
-#container_menu main.main_menu .descripcion {
-  color: orangered;
-  text-align: center;
-  font-size: 30px;
-  padding: 20px;
-  font-style: italic;
-  font-weight: 700;
-}
-#container_menu .comidas-vinos-postres {
   margin-top: 50px;
-  grid-row-end: 3;
-  height: auto;
-  width: 300px;
-  background-image: url(../imagenes/biografia_chef.jpg);
+  background-image: url(../imagenes/fondo_menu.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
 }
-#container_menu .comidas-vinos-postres h3 {
-  font-size: 40px;
-  color: rgb(216, 115, 0);
-  background-image: url(../imagenes/consejos_para_el_cuidado_de_la_parra_de_uvas.jpg);
+
+.menus {
+  margin-top: 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
-#container_menu .comidas-vinos-postres li {
-  padding: 5px;
-  font-size: 23px;
-  color: rgb(243, 238, 238);
-  font-style: italic;
-  font-weight: 700;
-}
-#container_menu .flip-card {
-  background-color: transparent;
-  width: 350px;
-  height: 400px;
-  perspective: 1000px;
-  font-family: sans-serif;
-}
-#container_menu .title {
-  font-size: 1.5em;
-  font-weight: 900;
+
+/* Estilos de la bienvenida */
+.welcome {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.welcome h1:hover {
+  color: #F5A623;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+/* Estilos del menú */
+.menu_cartas {
+  width: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.5137254902);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #ee0a0a;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #df3535;
+}
+
+.menu-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.menu-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #e7390d;
+}
+
+.menu-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: auto;
+}
+
+.menu-card {
+  width: 800px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-card h3 {
+  background-color: #555;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
   margin: 0;
 }
-#container_menu .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+
+.menu-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
 }
-#container_menu .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+
+.menu-card li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
-#container_menu .flip-card-front,
-#container_menu .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1px solid rgb(224, 108, 0);
-  border-radius: 1rem;
+
+.comidas {
+  background-color: #F5A623;
 }
-#container_menu .flip-card-front {
-  background: linear-gradient(120deg, bisque 60%, rgb(24, 21, 20) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-  color: rgb(192, 56, 6);
+
+.vinos {
+  background-color: #9B59B6;
 }
-#container_menu .flip-card-front img {
-  height: 250px;
-}
-#container_menu .flip-card-back {
-  background: linear-gradient(120deg, rgb(27, 20, 17) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
-  color: white;
-  transform: rotateY(180deg);
+
+.postres {
+  background-color: #3498DB;
 }
 
 #container_nosotros {
@@ -595,13 +782,13 @@ body {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 6;
-  background-image: url(../imagenes/fondo\ carnes.jpeg);
+  background-image: url(../imagenes/fondo.footer.jpg);
   background-size: cover;
   display: flex;
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
-  color: #d1660e;
-  background-color: #fff;
+  color: #030303;
+  background-color: #f30606;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -615,10 +802,8 @@ body {
 }
 
 .footer__logo {
-  font-family: "Pacifico", cursive;
   font-weight: 400;
   text-transform: lowercase;
-  font-size: 1.5rem;
 }
 
 .footer__addr h2 {
@@ -628,8 +813,8 @@ body {
 }
 
 .nav__title {
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 5px;
 }
 
 .footer address {
@@ -702,7 +887,7 @@ body {
 .legal {
   display: flex;
   flex-wrap: wrap;
-  color: #999;
+  color: #030303;
 }
 
 .legal__links {
@@ -737,23 +922,51 @@ body {
     display: block;
   }
 }
+/*menu*/
 @media screen and (max-width: 580px) {
-  main {
-    display: none;
-  }
-  .form.form {
-    width: auto;
+  #container_menu {
+    grid-column: 1;
     display: block;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    background-repeat: no-repeat;
   }
-  .form.form .card {
-    margin-top: 10px;
-    margin-left: 20px;
+  #container_menu main.menu {
+    display: block;
   }
-  .form.form .card img {
+  #container_menu .cards {
+    display: flex;
+  }
+  #container_menu .cards card {
     width: auto;
+  }
+  #container_menu .menu-cards {
+    display: block;
+    width: auto;
+  }
+  #container_menu .menu-wrapper {
+    display: block;
+    width: auto;
+  }
+  .menu-card {
+    width: 70%;
+  }
+  .welcome p {
+    width: auto;
+  }
+}
+@media (max-width: 580px) {
+  /* Estilos para la sección de comidas */
+  .comidas {
+    width: 70%;
+  }
+  .comidas article li {
+    font-size: 16px;
+  }
+  /* Estilos para la sección de vinos */
+  .vinos article li {
+    font-size: 14px;
+  }
+  /* Estilos para la sección de postres */
+  .postres li {
+    font-size: 16px;
   }
 }
 /*index*/
@@ -784,6 +997,9 @@ body {
   }
   .aside-publicidad {
     display: none;
+  }
+  .pie img {
+    height: 40px;
   }
 }
 /*footer*/
@@ -839,42 +1055,8 @@ body {
     width: 100px;
   }
 }
-@media screen and (max-width: 580px) {
-  #container_menu {
-    width: auto;
-    display: block;
-    justify-items: center;
-    columns: 1;
-    text-align: center;
-  }
-  #container_menu main.main_menu {
-    width: auto;
-    display: block;
-  }
-  #container_menu main.main_menu .flip-card-front,
-  #container_menu main.main_menu .flip-card-back {
-    width: 80%;
-  }
-  #container_menu .comidas-vinos-postres {
-    margin-left: 10px;
-  }
-  #container_menu .descripcion {
-    color: black;
-  }
-  #container_menu .flip-card-inner {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  #container_menu .flip-card {
-    width: auto;
-  }
-}
 /*sobre_nosotros*/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 780px) {
   #container_nosotros main.nosotros {
     display: block;
   }
