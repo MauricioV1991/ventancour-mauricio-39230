@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Staatliches&display=swap');
 
 
 #container {
@@ -27,7 +26,7 @@
     border-radius: 50px;
 
     h2 {
-        
+
         font-size: 40px;
     }
 
@@ -64,20 +63,25 @@
     height: auto;
     text-align: center;
 
-    h2 {font-size: 50px;
+    h2 {
+        font-size: 50px;
         color: rgb(15, 15, 14);
     }
-    li{padding: 5px;
+
+    li {
+        padding: 5px;
         float: left;
         font-size: 40px;
     }
+
     .foto_bondiola {
-       float: left;
-       margin: 50px;
-       img{
-        width: 400px;
-        border-radius: 20px;
-       }
+        float: left;
+        margin: 50px;
+
+        img {
+            width: 400px;
+            border-radius: 20px;
+        }
     }
 
 }
